@@ -1,0 +1,17 @@
+# Min-Implant v2 Backend dependencies
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+curl_cffi>=0.15.0
+aiosqlite>=0.20.0
+pydantic>=2.0
+pyyaml>=6.0
+structlog>=24.0
+httpx[http2]>=0.27.0
+loguru>=0.7.0
+
+# Optional: ba_paypal Alternate verification path (Does not affect the main link)
+# pako>=1.0.0          # hCaptcha PoW Unpack (Node Already on the side, Only pure Python path required)
+# playwright>=1.40.0   # reCAPTCHA Local browser solution (default HTTP, Spare only)
+
+# Optional: GPT Account registration (reg/) Already built in, No additional dependencies required; Customized email channel
+# reg.engine.register_email_channel register (See README Four·five)
